@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/listScroll"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toTopOf="@+id/WhiteBackGround"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_chat_carpool"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ListView
+                android:id="@+id/lv_chating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:divider="#ffffff"
+                app:layout_constraintBottom_toTopOf="@+id/WhiteBackGround"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar_chat_carpool"
+                tools:ignore="NestedScrolling" />
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/WhiteBackGround"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/whiteBackground_ImageView_layout_height"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavView_Bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:srcCompat="@color/colorWhite" />
+
+        <ImageButton
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:onClick="clickSend"
+            app:layout_constraintBottom_toBottomOf="@+id/et_send"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/et_send"
+            app:layout_constraintTop_toTopOf="@+id/et_send"
+            app:layout_constraintVertical_bias="0.562"
+            app:srcCompat="@drawable/next" />
+
+        <include
+            android:id="@+id/toolbar_chat_carpool"
+            layout="@layout/toolbar_chat_carpool"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_send"
+            android:layout_width="@dimen/et_send_EditText_layout_width"
+            android:layout_height="@dimen/et_send_EditText_layout_height"
+            android:layout_marginBottom="@dimen/et_send_EditText_layout_marginTBottom"
+            android:background="@drawable/textview_background_color"
+            android:ems="10"
+            android:hint="채팅을 입력해주세요."
+            android:inputType="textPersonName"
+            android:textSize="@dimen/et_send_EditText_textSize"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavView_Bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.27"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavView_Bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottomNavigationView_layout_height"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:paddingTop="@dimen/bottomNavigationView_paddingTop"
+            android:stateListAnimator="@null"
+            app:itemBackground="@color/colorWhite"
+            app:itemIconTint="@drawable/item_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/menu_nav">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:scrollbarSize="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_join_carpool"
+            layout="@layout/toolbar_join_carpool" />
+
+        <TextView
+            android:id="@+id/dateSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/routeTextView_layout_marginTop"
+            android:background="@drawable/textview_background_color"
+            android:gravity="center"
+            android:text="날짜"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_join_carpool" />
+
+        <TextView
+
+            android:id="@+id/date"
+            android:layout_width="@dimen/dateTextView_layout_width"
+            android:layout_height="@dimen/route_layout_height"
+            android:layout_marginTop="20dp"
+            android:dropDownWidth="wrap_content"
+            android:gravity="center"
+            android:text="09/10"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="@+id/dateSelect"
+            app:layout_constraintStart_toStartOf="@+id/dateSelect"
+            app:layout_constraintTop_toBottomOf="@+id/dateSelect" />
+
+
+        <TextView
+            android:id="@+id/routeSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/routeTextView_layout_marginTop"
+            android:background="@drawable/textview_background_color"
+            android:gravity="center"
+            android:text="방향 선택"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_join_carpool" />
+
+
+        <Spinner
+
+            android:id="@+id/route"
+            android:layout_width="@dimen/route_layout_width"
+            android:layout_height="@dimen/route_layout_height"
+            android:layout_marginTop="@dimen/route_marginTop"
+            android:background="@drawable/black_background_color"
+            android:dropDownWidth="wrap_content"
+            android:gravity="center_horizontal"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="@+id/routeSelect"
+            app:layout_constraintStart_toStartOf="@+id/routeSelect"
+            app:layout_constraintTop_toBottomOf="@+id/routeSelect" />
+
+        <TextView
+            android:id="@+id/genderSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="@dimen/genderTextView_layout_marginTop"
+            android:background="@drawable/textview_background_color"
+            android:gravity="center"
+            android:text="동성 여부"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.79"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_join_carpool" />
+
+
+        <CheckBox
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/gender_layout_marginTop"
+            app:layout_constraintEnd_toEndOf="@+id/genderSelect"
+            app:layout_constraintStart_toStartOf="@+id/genderSelect"
+            app:layout_constraintTop_toBottomOf="@+id/genderSelect" />
+
+        <ScrollView
+            android:id="@+id/listScroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavView_Bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/route"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/black_background_color"
+                tools:ignore="NestedScrolling" />
+
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:text=""
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/route" />
+
+
+        <Button
+            android:id="@+id/plusButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/plusButton_layout_height"
+            android:background="@drawable/edittext_background_color"
+            android:onClick="onPlusButtonClicked"
+            android:text="+ 새 대화방"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavView_Bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/listScroll"
+            app:layout_constraintVertical_bias="0.9" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavView_Bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/NavigationView_layout_height"
+            android:layout_alignParentBottom="false"
+            android:background="#ffffff"
+            android:paddingTop="@dimen/NavigationView_paddingTop"
+            android:stateListAnimator="@null"
+            app:itemBackground="@color/colorWhite"
+            app:itemIconTint="@drawable/item_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/menu_nav">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <ImageButton
+            android:id="@+id/refresh"
+            android:layout_width="@dimen/refreshButton_layout_width"
+            android:layout_height="@dimen/refreshButton_layout_height"
+            android:layout_marginTop="@dimen/refreshButton_layout_marginTop"
+            android:background="#ffffff"
+            android:onClick="onRefreshClicked"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toolbar_join_carpool"
+            app:srcCompat="@drawable/ic_refresh" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

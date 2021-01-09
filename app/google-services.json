@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "82033667967",
+    "firebase_url": "https://project-2686580879054420672.firebaseio.com",
+    "project_id": "project-2686580879054420672",
+    "storage_bucket": "project-2686580879054420672.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:82033667967:android:778433ed2aa937f760f44a",
+        "android_client_info": {
+          "package_name": "com.project.kutaxi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "82033667967-pd0gn8t611hgf7md4htsvl1o4djm52kq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqGBgHGo5RyeBZk1zZn5hrKj_vMPvWY5I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "82033667967-pd0gn8t611hgf7md4htsvl1o4djm52kq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

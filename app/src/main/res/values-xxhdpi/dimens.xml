@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- activity_main.xml -->
+    <dimen name="text_imageView_layout_width">140dp</dimen>
+    <dimen name="text_imageView_layout_height">107dp</dimen>
+    <dimen name="taxi_imageView_layout_width">89dp</dimen>
+    <dimen name="taxi_imageView_layout_height">80dp</dimen>
+    <dimen name="taxi_imageView_layout_marginTop">0dp</dimen>
+
+    <!-- login_main.xml -->
+    <dimen name="textlogo_layout_width">260dp</dimen>
+    <dimen name="textlogo_layout_height">187dp</dimen>
+    <dimen name="textlogo_layout_marginStart">72dp</dimen>
+    <dimen name="textlogo_layout_marginLeft">72dp</dimen>
+    <dimen name="textlogo_layout_marginTop">16dp</dimen>
+
+    <dimen name="id_layout_width">320dp</dimen>
+    <dimen name="id_layout_height">45dp</dimen>
+    <dimen name="id_layout_marginStart">28dp</dimen>
+    <dimen name="id_layout_marginLeft">28dp</dimen>
+    <dimen name="id_layout_marginTop">244dp</dimen>
+
+    <dimen name="pwd_layout_width">320dp</dimen>
+    <dimen name="pwd_layout_height">45dp</dimen>
+    <dimen name="pwd_layout_marginStart">28dp</dimen>
+    <dimen name="pwd_layout_marginLeft">28dp</dimen>
+    <dimen name="pwd_layout_marginTop">302dp</dimen>
+
+    <dimen name="taxilogo_layout_width">165dp</dimen>
+    <dimen name="taxilogo_layout_height">127dp</dimen>
+    <dimen name="taxilogo_layout_marginStart">120dp</dimen>
+    <dimen name="taxilogo_layout_marginLeft">120dp</dimen>
+    <dimen name="taxilogo_layout_marginTop">496dp</dimen>
+
+    <dimen name="login_layout_width">320dp</dimen>
+    <dimen name="login_layout_height">44dp</dimen>
+    <dimen name="login_layout_marginStart">28dp</dimen>
+    <dimen name="login_layout_marginLeft">28dp</dimen>
+    <dimen name="login_layout_marginTop">360dp</dimen>
+
+    <!-- activity_calendar.xml -->
+    <dimen name="calendar_layout_height">420dp</dimen>
+
+    <dimen name="imageButton_layout_marginStart">368dp</dimen>
+    <dimen name="imageButton_layout_marginLeft">368dp</dimen>
+    <dimen name="imageButton_layout_marginTop">15dp</dimen>
+
+    <dimen name="bottomNavigationView_layout_height">55dp</dimen>
+    <dimen name="bottomNavigationView_paddingTop">10dp</dimen>
+
+    <!-- join_carpool.xml -->
+    <dimen name="dateTextView_layout_width">60dp</dimen>
+
+    <dimen name="routeTextView_layout_marginStart">70dp</dimen>
+    <dimen name="routeTextView_layout_marginLeft">70dp</dimen>
+    <dimen name="routeTextView_layout_marginTop">20dp</dimen>
+
+    <dimen name="route_layout_width">140dp</dimen>
+    <dimen name="route_layout_height">32dp</dimen>
+    <dimen name="route_marginStart">39dp</dimen>
+    <dimen name="route_marginLeft">39dp</dimen>
+    <dimen name="route_marginTop">20dp</dimen>
+
+    <dimen name="genderTextView_layout_marginStart">180dp</dimen>
+    <dimen name="genderTextView_layout_marginLeft">180dp</dimen>
+    <dimen name="genderTextView_layout_marginTop">20dp</dimen>
+    <dimen name="genderTextView_layout_marginEnd">70dp</dimen>
+    <dimen name="genderTextView_layout_marginRight">70dp</dimen>
+
+    <dimen name="nextButton_layout_marginTop">16dp</dimen>
+
+    <dimen name="gender_layout_marginStart">150dp</dimen>
+    <dimen name="gender_layout_marginLeft">150dp</dimen>
+    <dimen name="gender_layout_marginTop">20dp</dimen>
+
+    <dimen name="listScroll_layout_height">380dp</dimen>
+    <dimen name="listScroll_marginTop">20dp</dimen>
+
+    <dimen name="list_layout_marginStart">30dp</dimen>
+    <dimen name="list_layout_marginLeft">30dp</dimen>
+    <dimen name="list_layout_marginEnd">30dp</dimen>
+    <dimen name="list_layout_marginRight">30dp</dimen>
+
+    <dimen name="plusButton_layout_height">40dp</dimen>
+
+    <dimen name="NavigationView_layout_height">55dp</dimen>
+    <dimen name="NavigationView_paddingTop">10dp</dimen>
+
+    <dimen name="refreshButton_layout_width">20dp</dimen>
+    <dimen name="refreshButton_layout_height">23.5dp</dimen>
+    <dimen name="refreshButton_layout_marginStart">355dp</dimen>
+    <dimen name="refreshButton_layout_marginLeft">355dp</dimen>
+    <dimen name="refreshButton_layout_marginTop">30dp</dimen>
+
+    <!--listview_item.xml -->
+
+    <dimen name="listItem_startTime_TextView_layout_width">50dp</dimen>
+    <dimen name="listItem_startTime_TextView_layout_height">25dp</dimen>
+    <dimen name="listItem_startTime_TextView_paddingLeft">15dp</dimen>
+    <dimen name="listItem_startTime_TextView_textSize">16sp</dimen>
+
+    <dimen name="listItem_wave_TextView_layout_height">25dp</dimen>
+    <dimen name="listItem_wave_TextView_textSize">18sp</dimen>
+
+    <dimen name="listItem_endTime_TextView_layout_width">50dp</dimen>
+    <dimen name="listItem_endTime_TextView_layout_height">25dp</dimen>
+    <dimen name="listItem_endTime_TextView_paddingRight">15dp</dimen>
+    <dimen name="listItem_endTime_TextView_textSize">16sp</dimen>
+
+    <dimen name="listItem_route_TextView_layout_width">120dp</dimen>
+    <dimen name="listItem_route_TextView_layout_height">25dp</dimen>
+    <dimen name="listItem_route_TextView_paddingLeft">10dp</dimen>
+    <dimen name="listItem_route_TextView_textSize">14sp</dimen>
+
+    <dimen name="listItem_currentMember_TextView_layout_width">27dp</dimen>
+    <dimen name="listItem_currentMember_TextView_layout_height">25dp</dimen>
+    <dimen name="listItem_currentMemberTextView_paddingRight">5dp</dimen>
+    <dimen name="listItem_currentMember_TextView_textSize">15sp</dimen>
+
+    <dimen name="listItem_slash_TextView_layout_width">16dp</dimen>
+    <dimen name="listItem_slash_TextView_layout_height">25dp</dimen>
+    <dimen name="listItem_slash_TextView_textSize">15sp</dimen>
+
+    <dimen name="listItem_maxMember_TextView_layout_width">27dp</dimen>
+    <dimen name="listItem_maxMember_TextView_layout_height">25dp</dimen>
+    <dimen name="listItem_maxMember_TextView_paddingLeft">5dp</dimen>
+    <dimen name="listItem_maxMember_TextView_textSize">15sp</dimen>
+
+    <dimen name="listItem_content_TextView_layout_width">245dp</dimen>
+    <dimen name="listItem_content_TextView_layout_height">30dp</dimen>
+    <dimen name="listItem_content_TextView_paddingLeft">10dp</dimen>
+    <dimen name="listItem_content_TextView_textSize">10sp</dimen>
+
+    <dimen name="listItem_gender_ImageView_layout_width">60dp</dimen>
+    <dimen name="listItem_gender_ImageView_layout_height">30dp</dimen>
+
+    <!-- create_carpool.xml -->
+
+    <dimen name="timeTextView_layout_marginStart">25dp</dimen>
+    <dimen name="timeTextView_layout_marginLeft">25dp</dimen>
+    <dimen name="timeTextView_layout_marginTop">32dp</dimen>
+    <dimen name="timeTextView_textSize">15sp</dimen>
+
+    <dimen name="startAmPm_Spinner_layout_marginStart">10dp</dimen>
+    <dimen name="startAmPm_Spinner_layout_marginLeft">10dp</dimen>
+    <dimen name="startAmPm_Spinner_layout_marginTop">32dp</dimen>
+
+    <dimen name="startHour_Spinner_layout_marginStart">7dp</dimen>
+    <dimen name="startHour_Spinner_layout_marginLeft">7dp</dimen>
+    <dimen name="startHour_Spinner_layout_marginTop">32dp</dimen>
+
+    <dimen name="startColon_TextView_layout_width">7dp</dimen>
+    <dimen name="startColon_TextView_layout_height">32dp</dimen>
+    <dimen name="startColon_TextView_layout_marginStart">7dp</dimen>
+    <dimen name="startColon_TextView_layout_marginLeft">7dp</dimen>
+    <dimen name="startColon_TextView_layout_marginTop">29dp</dimen>
+    <dimen name="startColon_TextView_textSize">25sp</dimen>
+
+    <dimen name="startMinute_Spinner_layout_marginStart">7dp</dimen>
+    <dimen name="startMinute_Spinner_layout_marginLeft">7dp</dimen>
+    <dimen name="startMinute_Spinner_layout_marginTop">32dp</dimen>
+
+    <dimen name="endAmPm_Spinner_layout_marginStart">7dp</dimen>
+    <dimen name="endAmPm_Spinner_layout_marginLeft">7dp</dimen>
+    <dimen name="endAmPm_Spinner_layout_marginTop">32dp</dimen>
+
+    <dimen name="endHour_Spinner_layout_marginStart">7dp</dimen>
+    <dimen name="endHour_Spinner_layout_marginLeft">7dp</dimen>
+    <dimen name="endHour_Spinner_layout_marginTop">32dp</dimen>
+
+    <dimen name="endColon_TextView_layout_width">7dp</dimen>
+    <dimen name="endColon_TextView_layout_height">32dp</dimen>
+    <dimen name="endColon_TextView_layout_marginStart">7dp</dimen>
+    <dimen name="endColon_TextView_layout_marginLeft">7dp</dimen>
+    <dimen name="endColon_TextView_layout_marginTop">29dp</dimen>
+    <dimen name="endColon_TextView_textSize">25sp</dimen>
+
+    <dimen name="endMinute_Spinner_layout_marginStart">7dp</dimen>
+    <dimen name="endMinute_Spinner_layout_marginLeft">7dp</dimen>
+    <dimen name="endMinute_Spinner_layout_marginTop">32dp</dimen>
+    <dimen name="endMinute_Spinner_layout_marginEnd">5dp</dimen>
+    <dimen name="endMinute_Spinner_layout_marginRight">5dp</dimen>
+
+    <dimen name="timeWave_TextView_layout_height">32dp</dimen>
+    <dimen name="timeWave_TextView_layout_marginStart">7dp</dimen>
+    <dimen name="timeWave_TextView_layout_marginLeft">7dp</dimen>
+    <dimen name="timeWave_TextView_layout_marginTop">29dp</dimen>
+    <dimen name="timeWave_TextView_textSize">20sp</dimen>
+
+    <dimen name="routeSpinner_TextView_layout_marginStart">37dp</dimen>
+    <dimen name="routeSpinner_TextView_layout_marginLeft">37dp</dimen>
+    <dimen name="routeSpinner_TextView_layout_marginTop">32dp</dimen>
+    <dimen name="routeSpinner_TextView_textSize">15sp</dimen>
+
+    <dimen name="genderSpinner_TextView_layout_marginStart">45dp</dimen>
+    <dimen name="genderSpinner_TextView_layout_marginLeft">45dp</dimen>
+    <dimen name="genderSpinner_TextView_layout_marginTop">32dp</dimen>
+    <dimen name="genderSpinner_TextView_layout_marginEnd">37dp</dimen>
+    <dimen name="genderSpinner_TextView_layout_marginRight">37dp</dimen>
+    <dimen name="genderSpinner_TextView_textSize">15sp</dimen>
+
+    <dimen name="memberSpinner_TextView_layout_marginStart">45dp</dimen>
+    <dimen name="memberSpinner_TextView_layout_marginLeft">45dp</dimen>
+    <dimen name="memberSpinner_TextView_layout_marginTop">32dp</dimen>
+    <dimen name="memberSpinner_TextView_textSize">15sp</dimen>
+
+    <dimen name="member_Spinner_layout_marginStart">176dp</dimen>
+    <dimen name="member_Spinner_layout_marginLeft">176dp</dimen>
+    <dimen name="member_Spinner_layout_marginTop">32dp</dimen>
+
+    <dimen name="content_TextView_layout_marginStart">37dp</dimen>
+    <dimen name="content_TextView_layout_marginLeft">37dp</dimen>
+    <dimen name="content_TextView_layout_marginTop">32dp</dimen>
+    <dimen name="content_TextView_textSize">15sp</dimen>
+
+    <dimen name="route_Spinner_layout_marginStart">20dp</dimen>
+    <dimen name="route_Spinner_layout_marginLeft">20dp</dimen>
+    <dimen name="route_Spinner_layout_marginTop">32dp</dimen>
+
+    <dimen name="createNextButton_layout_marginStart">368dp</dimen>
+    <dimen name="createNextButton_layout_marginLeft">368dp</dimen>
+    <dimen name="createNextButton_layout_marginTop">16dp</dimen>
+
+    <dimen name="content_EditText_layout_width">310dp</dimen>
+    <dimen name="content_EditText_layout_height">140dp</dimen>
+    <dimen name="content_EditText_layout_marginTop">32dp</dimen>
+    <dimen name="content_EditText_textSize">14sp</dimen>
+    <dimen name="content_EditText_paddingStart">10dp</dimen>
+    <dimen name="content_EditText_paddingLeft">10dp</dimen>
+    <dimen name="content_EditText_paddingTop">10dp</dimen>
+
+    <dimen name="genderCheck_layout_marginStart">95dp</dimen>
+    <dimen name="genderCheck_layout_marginLeft">95dp</dimen>
+    <dimen name="genderCheck_layout_marginTop">32dp</dimen>
+
+    <!-- chat_carpool.xml -->
+
+    <dimen name="lv_Chating_ListView_layout_height">0dp</dimen>
+    <dimen name="lv_Chating_ListView_layout_marginBottom">100dp</dimen>
+
+    <dimen name="whiteBackground_ImageView_layout_height">60dp</dimen>
+
+    <dimen name="btn_send_ImageButton_layout_marginStart">16dp</dimen>
+    <dimen name="btn_send_ImageButton_layout_marginLeft">16dp</dimen>
+
+    <dimen name="et_send_EditText_layout_width">300dp</dimen>
+    <dimen name="et_send_EditText_layout_height">30dp</dimen>
+    <dimen name="et_send_EditText_layout_marginTBottom">15dp</dimen>
+
+    <!-- chatlist_item.xml -->
+
+
+
+
+    <dimen name="et_send_EditText_textSize">12sp</dimen>
+
+    <!-- mypage_carpool.xml -->
+
+    <dimen name="myInformation_TextView_layout_marginStart">25dp</dimen>
+    <dimen name="myInformation_TextView_layout_marginLeft">25dp</dimen>
+    <dimen name="myInformation_TextView_layout_marginTop">25dp</dimen>
+    <dimen name="myInformation_TextView_textSize">15sp</dimen>
+
+    <dimen name="divider_layout_marginTop">8dp</dimen>
+
+    <dimen name="nameText_TextView_layout_marginStart">40dp</dimen>
+    <dimen name="nameText_TextView_layout_marginLeft">40dp</dimen>
+    <dimen name="nameText_TextView_layout_marginTop">30dp</dimen>
+    <dimen name="nameText_TextView_textSize">15sp</dimen>
+
+    <dimen name="name_TextView_layout_width">80dp</dimen>
+    <dimen name="name_TextView_layout_marginStart">25dp</dimen>
+    <dimen name="name_TextView_layout_marginLeft">25dp</dimen>
+    <dimen name="name_TextView_layout_marginTop">25dp</dimen>
+    <dimen name="name_TextView_textSize">15sp</dimen>
+
+    <dimen name="studentIdText_TextView_layout_marginTop">30dp</dimen>
+    <dimen name="studentIdText_TextView_textSize">15sp</dimen>
+
+    <dimen name="studentId_TextView_layout_width">100dp</dimen>
+    <dimen name="studentId_TextView_layout_marginTop">25dp</dimen>
+    <dimen name="studentId_TextView_textSize">15sp</dimen>
+
+    <dimen name="nicknameText_TextView_layout_marginTop">30dp</dimen>
+    <dimen name="nicknameText_TextView_layout_marginEnd">44dp</dimen>
+    <dimen name="nicknameText_TextView_layout_marginRight">44dp</dimen>
+    <dimen name="nicknameText_TextView_textSize">15sp</dimen>
+
+    <dimen name="nickname_TextView_layout_width">100dp</dimen>
+    <dimen name="nickname_TextView_layout_marginTop">25dp</dimen>
+    <dimen name="nickname_TextView_layout_marginEnd">25dp</dimen>
+    <dimen name="nickname_TextView_layout_marginRight">25dp</dimen>
+    <dimen name="nickname_TextView_textSize">15sp</dimen>
+
+    <dimen name="setting_TextView_layout_marginStart">25dp</dimen>
+    <dimen name="setting_TextView_layout_marginLeft">25dp</dimen>
+    <dimen name="setting_TextView_layout_marginTop">50dp</dimen>
+    <dimen name="setting_TextView_textSize">15sp</dimen>
+
+    <dimen name="settingList_ListView_layout_width">330dp</dimen>
+    <dimen name="settingList_ListView_layout_height">170dp</dimen>
+    <dimen name="settingList_ListView_layout_marginTop">30dp</dimen>
+
+    <!-- styles.xml -->
+
+    <dimen name="divider_Style_layout_width">338dp</dimen>
+    <dimen name="divider_Style_layout_height">1dp</dimen>
+
+    <!-- mypage_listitem.xml -->
+
+    <dimen name="settingImage_ImageView_layout_width">18dp</dimen>
+    <dimen name="settingImage_ImageView_layout_height">40dp</dimen>
+    <dimen name="settingImage_ImageView_layout_marginLeft">15dp</dimen>
+
+    <dimen name="settingItem_TextView_layout_height">40dp</dimen>
+    <dimen name="settingItem_TextView_layout_marginLeft">15dp</dimen>
+    <dimen name="settingItem_TextView_textSize">14sp</dimen>
+
+</resources>

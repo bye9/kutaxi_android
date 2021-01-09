@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content">
+
+    <!-- 타이틀바 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="대화방 나가기"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+    <!-- //end 타이틀바 -->
+
+    <!-- Notice -->
+
+    <View
+        android:background="#66bdbdbd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="        대화방을 나가시겠습니까?"
+            android:textColor="#000000"/>
+
+
+    </LinearLayout>
+    <!-- Notice -->
+
+    <View
+        android:background="#66bdbdbd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <!-- 닫기 버튼 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:onClick="onCancel"
+            android:text="취소"
+            android:textColor="#9b9b9b"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="확인"
+            android:textColor="#ff7a00"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!--// 닫기 버튼 -->
+</LinearLayout>

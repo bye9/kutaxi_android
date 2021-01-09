@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_mypage_carpool"
+            layout="@layout/toolbar_mypage_carpool" />
+
+
+        <TextView
+            android:id="@+id/myInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/myInformation_TextView_layout_marginStart"
+            android:layout_marginLeft="@dimen/myInformation_TextView_layout_marginLeft"
+            android:layout_marginTop="@dimen/myInformation_TextView_layout_marginTop"
+            android:text="내 정보"
+            android:textColor="#000000"
+            android:textSize="@dimen/myInformation_TextView_textSize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_mypage_carpool" />
+
+        <View
+            style="@style/Divider"
+            android:layout_marginTop="@dimen/divider_layout_marginTop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/myInformation" />
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/nameText_TextView_layout_marginStart"
+            android:layout_marginLeft="@dimen/nameText_TextView_layout_marginLeft"
+            android:layout_marginTop="@dimen/nameText_TextView_layout_marginTop"
+            android:background="@drawable/textview_background_color"
+            android:gravity="center"
+            android:text="이름"
+            android:textSize="@dimen/nameText_TextView_textSize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/myInformation" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="@dimen/name_TextView_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/name_TextView_layout_marginTop"
+            android:background="@drawable/black_background_color"
+            android:gravity="center"
+            android:textSize="@dimen/name_TextView_textSize"
+
+            app:layout_constraintEnd_toEndOf="@+id/nameText"
+            app:layout_constraintStart_toStartOf="@+id/nameText"
+            app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+        <TextView
+            android:id="@+id/studentIdText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/studentIdText_TextView_layout_marginTop"
+            android:background="@drawable/textview_background_color"
+            android:gravity="center"
+            android:text="학번"
+            android:textSize="@dimen/studentIdText_TextView_textSize"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/nicknameText"
+            app:layout_constraintStart_toEndOf="@+id/nameText"
+            app:layout_constraintTop_toBottomOf="@+id/myInformation" />
+
+        <TextView
+            android:id="@+id/studentId"
+            android:layout_width="@dimen/studentId_TextView_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/studentId_TextView_layout_marginTop"
+            android:background="@drawable/black_background_color"
+            android:gravity="center"
+            android:textSize="@dimen/studentId_TextView_textSize"
+            app:layout_constraintEnd_toEndOf="@+id/studentIdText"
+            app:layout_constraintStart_toStartOf="@+id/studentIdText"
+            app:layout_constraintTop_toBottomOf="@+id/studentIdText" />
+
+        <TextView
+            android:id="@+id/nicknameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/nicknameText_TextView_layout_marginTop"
+            android:layout_marginEnd="@dimen/nicknameText_TextView_layout_marginEnd"
+            android:layout_marginRight="@dimen/nicknameText_TextView_layout_marginRight"
+            android:background="@drawable/textview_background_color"
+            android:gravity="center"
+            android:text="닉네임"
+            android:textSize="@dimen/nicknameText_TextView_textSize"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/myInformation" />
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="@dimen/nickname_TextView_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/nickname_TextView_layout_marginTop"
+            android:background="@drawable/black_background_color"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/nickname_TextView_textSize"
+            app:layout_constraintEnd_toEndOf="@+id/nicknameText"
+            app:layout_constraintStart_toStartOf="@+id/nicknameText"
+            app:layout_constraintTop_toBottomOf="@+id/nicknameText" />
+
+
+        <TextView
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/setting_TextView_layout_marginStart"
+            android:layout_marginLeft="@dimen/setting_TextView_layout_marginLeft"
+            android:layout_marginTop="@dimen/setting_TextView_layout_marginTop"
+            android:text="설정"
+            android:textColor="#000000"
+            android:textSize="@dimen/setting_TextView_textSize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+
+        <View
+            android:id="@+id/view"
+            style="@style/Divider"
+            android:layout_marginTop="@dimen/divider_layout_marginTop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/setting" />
+
+        <ListView
+            android:id="@+id/settingList"
+            android:layout_width="@dimen/settingList_ListView_layout_width"
+            android:layout_height="@dimen/settingList_ListView_layout_height"
+            android:layout_marginTop="@dimen/settingList_ListView_layout_marginTop"
+            android:background="@drawable/black_background_color"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavView_Bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/setting"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavView_Bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottomNavigationView_layout_height"
+            android:layout_alignParentBottom="false"
+            android:background="#ffffff"
+            android:paddingTop="@dimen/bottomNavigationView_paddingTop"
+            android:stateListAnimator="@null"
+            app:itemBackground="@color/colorWhite"
+            app:itemIconTint="@drawable/item_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/menu_nav">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</RelativeLayout>

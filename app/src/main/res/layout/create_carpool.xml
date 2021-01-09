@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/toolbar_carpool"
+            android:background="#FFFFFF"
+            layout="@layout/toolbar_carpool" />
+
+
+        <TextView
+            android:id="@+id/timeSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/timeTextView_layout_marginTop"
+            android:background="@drawable/textview_background_color"
+            android:gravity="center"
+            android:text="시간 선택"
+            android:textSize="@dimen/timeTextView_textSize"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavView_Bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_carpool"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Spinner
+
+            android:id="@+id/start_ampm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="@dimen/startAmPm_Spinner_layout_marginTop"
+            android:background="@drawable/black_background_color"
+            android:entries="@array/ampm"
+            android:gravity="center"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeSelect" />
+
+        <Spinner
+
+            android:id="@+id/start_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/startHour_Spinner_layout_marginTop"
+            android:background="@drawable/black_background_color"
+            android:dropDownHeight="30dp"
+            android:entries="@array/hour"
+            android:gravity="center"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toEndOf="@+id/start_ampm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeSelect" />
+
+        <TextView
+            android:id="@+id/start_colon"
+            android:layout_width="@dimen/startColon_TextView_layout_width"
+            android:layout_height="@dimen/startColon_TextView_layout_height"
+            android:layout_marginTop="29dp"
+            android:text=":"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/startColon_TextView_textSize"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.31"
+            app:layout_constraintStart_toEndOf="@+id/start_hour"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeSelect" />
+
+        <Spinner
+
+            android:id="@+id/start_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/startMinute_Spinner_layout_marginTop"
+            android:background="@drawable/black_background_color"
+            android:entries="@array/minute"
+            android:gravity="center"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.38"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeSelect" />
+
+
+        <Spinner
+
+            android:id="@+id/end_ampm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/endAmPm_Spinner_layout_marginTop"
+
+            android:background="@drawable/black_background_color"
+            android:entries="@array/ampm"
+            android:gravity="center"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.63"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeSelect" />
+
+        <Spinner
+
+            android:id="@+id/end_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/endHour_Spinner_layout_marginTop"
+
+            android:background="@drawable/black_background_color"
+            android:entries="@array/hour"
+            android:gravity="center"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.79"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeSelect" />
+
+        <TextView
+            android:id="@+id/end_colon"
+            android:layout_width="@dimen/endColon_TextView_layout_width"
+            android:layout_height="@dimen/endColon_TextView_layout_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="29dp"
+            android:gravity="center"
+            android:text=":"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/endColon_TextView_textSize"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.84"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeSelect" />
+
+        <Spinner
+
+            android:id="@+id/end_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginTop="@dimen/endMinute_Spinner_layout_marginTop"
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/black_background_color"
+            android:entries="@array/minute"
+            android:gravity="center"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.97"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeSelect" />
+
+        <TextView
+            android:id="@+id/time_wave"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/timeWave_TextView_layout_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="~"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/timeWave_TextView_textSize"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeSelect" />
+
+
+        <TextView
+            android:id="@+id/routeSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/textview_background_color"
+            android:gravity="center"
+            android:text="방향 선택"
+            android:textSize="@dimen/routeSpinner_TextView_textSize"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavView_Bar"
+            app:layout_constraintEnd_toEndOf="@+id/timeSelect"
+            app:layout_constraintStart_toStartOf="@+id/timeSelect"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_carpool"
+            app:layout_constraintVertical_bias="0.32" />
+
+        <TextView
+            android:id="@+id/genderSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/textview_background_color"
+            android:gravity="center"
+            android:text="동성 여부"
+            android:textSize="@dimen/genderSpinner_TextView_textSize"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavView_Bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.92"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_carpool"
+            app:layout_constraintVertical_bias="0.32" />
+
+        <TextView
+            android:id="@+id/memberSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/textview_background_color"
+            android:gravity="center"
+            android:text="인원수"
+            android:textSize="@dimen/memberSpinner_TextView_textSize"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavView_Bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_carpool"
+            app:layout_constraintVertical_bias="0.32" />
+
+        <Spinner
+
+            android:id="@+id/member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/member_Spinner_layout_marginTop"
+            android:background="@drawable/black_background_color"
+            android:dropDownWidth="wrap_content"
+            android:entries="@array/member"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintEnd_toEndOf="@+id/memberSelect"
+            app:layout_constraintStart_toStartOf="@+id/memberSelect"
+            app:layout_constraintTop_toBottomOf="@+id/memberSelect" />
+
+        <TextView
+            android:id="@+id/contentSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/textview_background_color"
+            android:gravity="center"
+            android:text="내용"
+            android:textSize="@dimen/content_TextView_textSize"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavView_Bar"
+            app:layout_constraintEnd_toEndOf="@+id/route"
+            app:layout_constraintHorizontal_bias="0.23"
+            app:layout_constraintStart_toStartOf="@+id/route"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_carpool"
+            app:layout_constraintVertical_bias="0.58000004" />
+
+        <Spinner
+
+            android:id="@+id/route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/route_Spinner_layout_marginTop"
+            android:background="@drawable/black_background_color"
+            android:dropDownWidth="wrap_content"
+            android:entries="@array/route_create"
+            android:gravity="center_horizontal"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintEnd_toEndOf="@+id/routeSelect"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toStartOf="@+id/routeSelect"
+            app:layout_constraintTop_toBottomOf="@+id/routeSelect" />
+
+        <ImageButton
+            android:id="@+id/createNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#00FFFFFF"
+            android:onClick="onCreateNextButtonClicked"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/next" />
+
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="@dimen/content_EditText_layout_width"
+            android:layout_height="@dimen/content_EditText_layout_height"
+            android:layout_marginTop="@dimen/content_EditText_layout_marginTop"
+            android:background="@drawable/edittext_background_color"
+            android:gravity="clip_vertical"
+            android:hint="내용을 입력하세요.\n(최대 20글자만 입력하세요.)"
+            android:inputType="text"
+            android:maxLength="40"
+            android:paddingStart="@dimen/content_EditText_paddingStart"
+            android:paddingLeft="@dimen/content_EditText_paddingLeft"
+            android:paddingTop="@dimen/content_EditText_paddingTop"
+            android:textCursorDrawable="@color/colorWhite"
+            android:textSize="@dimen/content_EditText_textSize"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavView_Bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contentSelect"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <CheckBox
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/genderCheck_layout_marginTop"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintEnd_toEndOf="@+id/genderSelect"
+            app:layout_constraintStart_toStartOf="@+id/genderSelect"
+            app:layout_constraintTop_toBottomOf="@+id/genderSelect" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavView_Bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottomNavigationView_layout_height"
+            android:background="#ffffff"
+            android:paddingTop="@dimen/bottomNavigationView_paddingTop"
+            android:stateListAnimator="@null"
+            app:itemBackground="@color/colorWhite"
+            app:itemIconTint="@drawable/item_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/menu_nav">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

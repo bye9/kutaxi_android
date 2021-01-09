@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="09"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date_slash"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="/"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/start_time"
+            android:layout_width="48dp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="12:30"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wave"
+            android:layout_width="16sp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="~"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/end_time"
+            android:layout_width="48dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:text="13:00"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/route"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="충주역 -> 터미널"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/current_member"
+            android:layout_width="17dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:text="1"
+            android:textColor="#DD2C00"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/slash"
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="/"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/max_member"
+            android:layout_width="17dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:paddingRight="2dp"
+            android:text="3"
+            android:textColor="#00B8D4"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="276dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:paddingStart="4dp"
+            android:text="연수동 가실분 계시면 저랑 같이 타요 ^^(최대40)"
+            android:textColor="#88000000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/gender"
+            android:layout_width="46dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:src="@drawable/ic_human" />
+
+        <TextView
+            android:id="@+id/room_id"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+        <TextView
+            android:id="@+id/room_host"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+        <TextView
+            android:id="@+id/guest1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+        <TextView
+            android:id="@+id/guest2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

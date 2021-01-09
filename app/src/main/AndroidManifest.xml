@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.kutaxi">
+
+    <uses-permission android:name="android.permission.INTERNET"/> <!-- 인터넷을 사용할 수 있도록 함 -->
+
+    <application
+        android:networkSecurityConfig="@xml/config"
+        android:allowBackup="true"
+        android:icon="@drawable/taxi_logo"
+        android:label="가치타실"
+        android:roundIcon="@drawable/taxi_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name="com.project.kutaxi.IntroActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.project.kutaxi.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.project.kutaxi.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.project.kutaxi.CreateCarpool"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.project.kutaxi.JoinCarpool"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.project.kutaxi.ChatCarpool"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.project.kutaxi.MyPageCarpool"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.project.kutaxi.PopupNickname"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+
+        <activity android:name="com.project.kutaxi.PopupAlarm"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+
+        <activity android:name="com.project.kutaxi.PopupDelete"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+
+        <activity android:name="com.project.kutaxi.ChatList"
+            android:screenOrientation="portrait"/>
+
+        <service android:name="com.project.kutaxi.MyFirebaseMessagingService">
+            <intent-filter>
+
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+
+
+</manifest>
