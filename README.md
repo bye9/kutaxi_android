@@ -14,6 +14,9 @@
 - Firebase Cloud Messaging, Firebase Realtime Database를 통한 알림, 채팅 구현
 - 교내 캡스톤 디자인 경진대회 최우수상 수상(2020.11) (출시 이후 급상승 차트 8위 달성)
 
+![image](https://user-images.githubusercontent.com/54879572/108381270-fe07c300-724a-11eb-840a-005305c390c2.png)
+
+
 ## 💻프로젝트 데모
 ![image](https://user-images.githubusercontent.com/54879572/104102722-85bff080-52e1-11eb-9508-10865ef2e25e.png) ![image](https://user-images.githubusercontent.com/54879572/104102749-a425ec00-52e1-11eb-87c6-857d1bf63a4b.png)
 ![image](https://user-images.githubusercontent.com/54879572/104102763-b6078f00-52e1-11eb-9340-2e2b5b781df4.png) ![image](https://user-images.githubusercontent.com/54879572/104102771-c28be780-52e1-11eb-8c5c-675bab141360.png)
