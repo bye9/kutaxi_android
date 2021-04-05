@@ -1,7 +1,7 @@
 ## 🚕KU Taxi(android)
 ![image](https://user-images.githubusercontent.com/54879572/104101916-ea2e8000-52e0-11eb-88f1-0468c6eb8db1.png)
 
-- 주제 : 건국대학교 글로컬캠퍼스 학생들의 택시 동승 중개 서비스
+- 주제 : 학생들의 택시비 절약을 위한 택시 동승 중개 서비스
 - 프로젝트 기간 : 2020.04~2020.11
 - 팀원 : 석정환, 장용운
 
@@ -9,7 +9,6 @@
 - Java, Firebase, PHP, Apache, MySQL
 
 ## 📝프로젝트 내용
-- 프로젝트 리더, 애플리케이션 메인 자바 코드 작성
 - 학교포탈과 연동한 로그인 기능에서 ANR방지와 비동기 실행을 위한 AsyncTask클래스 사용
 - Firebase Cloud Messaging, Firebase Realtime Database를 통한 알림, 채팅 구현
 - 교내 캡스톤 디자인 경진대회 최우수상 수상(2020.11) (출시 이후 급상승 차트 8위 달성)
